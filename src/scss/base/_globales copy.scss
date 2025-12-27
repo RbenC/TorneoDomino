@@ -1,0 +1,104 @@
+@use 'variables' as v; 
+@use 'mixins' as m; 
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    font-family: v.$fuente_principal;
+    font-size: 1.6rem;
+}
+p {
+    color: v.$negro;
+    font-size: 2rem;
+    line-height: 2;
+}
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    margin: 0 0 2rem  0 ;
+}
+h1 {
+    font-size: 4rem;
+}
+
+
+h3 {
+    font-size: 2.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.seccion {
+    padding: 3rem 0;
+    @include m.tablet {
+        padding: 8rem 0;
+    }
+}
+
+
+// acordeon
+.accordion-title {
+  cursor: pointer;
+  padding: 1rem 0 1rem 5rem;
+  background-color: #f1f1f1;
+  transition: max-height 1.5s ease-in-out;
+
+}
+
+.accordion-content {
+  //display: none; /* Oculto por defecto *=
+  max-height: 0;
+  //padding: 10px;
+  overflow: hidden;
+  transition: max-height 1.5s ease-in-out;
+  .arrow-icon {
+    transition: transform 0.7s ease; /* Transición suave de 0.7 segundos */
+  }
+}
+
+.accordion-content.active {
+  display: block; /* Muestra cuando tiene la clase 'active' */
+  transition: max-height 3.5s ease-in-out;
+  max-height: 600rem;
+  .arrow-icon {
+    transform: rotate(180deg); /* ¡Esto lo hace girar! */
+  }
+}
+
+
+.arrow-icon {
+    transition: transform 0.7s ease; /* Transición suave de 0.7 segundos */
+}
+
+.accordion-content.active .arrow-icon {
+    transform: rotate(180deg); /* ¡Esto lo hace girar! */    
+}
+// acordeon
+
+
+.fixture{
+    margin: auto auto;
+}

@@ -1,0 +1,36 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer {
+    background-color: v.$negro;
+    border-top: 2px solid v.$blanco;
+    max-height: 16rem;
+    
+
+    .footer-grid{
+        padding: 0rem 1rem;
+        align-items: center center;
+        @include m.tablet {
+            @include m.grid(1, 5rem);
+        }        
+    }
+    .logo {
+        max-width: 8rem;
+        margin: 0 auto 1rem auto;
+    }
+    .footer-widget {
+        margin-bottom: 2rem;
+        @include m.tablet {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        color: v.$blanco;
+        margin: 0;
+        font-size: 1.2rem;
+        
+    }
+
+}

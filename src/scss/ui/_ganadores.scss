@@ -1,0 +1,71 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.ganadores {
+    background-color: v.$secundario;
+    h2{
+        @include m.headingBorder(v.$blanco, v.$primario);
+    }
+    .descripcion {
+        color: v.$blanco;
+    }
+}
+
+.nuestros-ganadores {
+    display: flex;
+    flex-direction: column;
+
+    @include m.tablet {
+        flex-direction: row;
+        max-width: 80rem;
+        margin-inline: auto;
+        margin-block-start: 10rem;
+
+    }
+
+    .posicion {
+        flex-grow: 1;
+        background-color: v.$blanco;
+        padding: 16rem 4rem 4rem 4rem;
+        border-bottom: 1px solid #e1e1e1;
+        @include m.tablet { 
+            border: none;
+            transition-property: transform;
+            transition-duration: 300ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        .felicitacion {
+            font-size: 1.8rem;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &.segundolugar {
+            @include m.iconoBg('../img/ganadoressegundolugar.jpg');
+        }
+        
+        &.primerlugar {
+            background-color: v.$primario;
+            order: -1;
+            @include m.iconoBg('../img/ganadoresprimerlugar.jpg');
+
+            @include m.tablet { 
+                order: unset;
+                margin-top: -5rem;
+                margin-bottom:-5rem;
+                border-radius: 2rem;
+                background-position: 50% 7rem;
+                padding-top: calc(22rem + 5rem);
+                z-index: 100;
+            }
+        }
+
+        &.tercerlugar {
+             @include m.iconoBg('../img/TodosJugadores.jpg');
+        }
+    }
+}

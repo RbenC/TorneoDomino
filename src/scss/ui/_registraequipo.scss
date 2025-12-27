@@ -1,0 +1,17 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.crea-grid {
+    @include m.tablet {
+        @include m.grid(2,5rem);
+        align-items: center;
+        max-width:100rem;
+    }
+    .codigoqr {
+        max-width: 10rem;
+    }
+     h2 {
+        @include m.headingBorder(v.$secundario, v.$primario);
+     }
+}
+

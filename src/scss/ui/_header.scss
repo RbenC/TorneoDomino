@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.site-header {
+    @include m.bgImagen('../img/operacionesIT.jpeg', v.$secundarioOpacity);    
+    padding: 1rem 0;    
+    .logo {
+        max-width: 8rem;
+        margin: 0;
+        @include m.tablet { 
+            margin: 0;
+            max-width: 12rem;
+        }
+        @include m.desktop{
+            max-width: 20rem;
+            
+
+        }
+    }
+    .contenido-header{        
+        padding-top: 30rem;
+        padding-bottom: 5rem;         
+        @include m.desktop { 
+            padding-top: 42rem;
+            padding-bottom: 20rem;            
+        }
+        h1 {
+            color: v.$blanco;
+            font-size: 2rem;
+            @include m.tablet { 
+                font-size: 3rem;                      
+            }           
+        }    
+    }
+}

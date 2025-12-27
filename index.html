@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Torneo Domino OpIT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="shortcut icon" href="build/img/logo.jpg" type="image/x-icon">
+  
+</head>
+<body>
+    <header class="site-header">
+        <div class="contenedor header-grip">
+            <div class="logo">
+                <img src="build/img/logo.png" alt="logo">
+            </div>
+            <div class="contenido-header">                
+                <h1>II Torneo Dominó Operaciones IT 2025 </h1>
+                <a href="https://forms.gle/HVQvGUJXE6UqUK8J8" target="_blank" class="boton-primario">Registrar Equipo</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="contenedor seccion">
+        <div class="crea-grid">
+            <div class="imagen">
+                <h3 class="text-center">Monto inscripcion por equipo $2.500</h3>
+                <img src="build/img/equipodomino.jpg" alt="imagen equipo domino">
+            </div>
+            <div class="contenido">
+                <h2>Registra tu Equipo</h2>
+                <p>Anímate y únete a otro compañero y registra tu equipo, para disfrutar un agradable momento fuera de la oficina. </p>
+                <p>Fecha: 19 Diciembre 2025</p> 
+                <p>Hora: a partir de las 12horas</p> 
+
+<!--inicio acorddion-->
+                <div class="accordion-container">
+                    <div class="accordion-item">
+                        <button 
+                            class="accordion-header"
+                            onclick="toggleAccordion('content1',this)">                            
+                            <p> Lugar: Eyzaguirre 771, Santiago </p>       
+                            <span class="arrow-icon">&#9660;</span>
+                        </button>
+                        <div id="content1" class="accordion-content">
+                            <div class="content-inner">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3328.90540704608!2d-70.648506!3d-33.4517709!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c50cb62aad33%3A0x4083acc87a9beccd!2sEyzaguirre%20771%2C%208331075%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1763640768524!5m2!1ses!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+<!--termino acorddion-->
+
+
+
+
+                      
+
+
+                <p><a href="https://drive.google.com/file/d/1HpxumVxUxgBMX1td_hxlIktwTfaujh3k/view?usp=sharing" target="_blank">Link para Descargar reglamento</a></p>
+                <p>o escanea QR
+                    <img class="codigoqr" src="build/img/PDF QR Code.png" alt="codigo QR">
+                </p>
+            </div>
+        
+       
+    </section>
+
+    
+
+
+    <section class="listadoequipos">
+
+        <!--inicio acorddion-->
+                <div class="accordion-container">
+                    <div class="accordion-item">
+                        <button 
+                            class="accordion-header"
+                            onclick="toggleAccordion('content2',this)">                                                        
+                             <p>Equipos Registrados</p>      
+                            <span class="arrow-icon">&#9660;</span>
+                        </button>
+                        <div id="content2" class="accordion-content">
+                            <div class="content-inner">
+                                <!-- Listado de equipos -->
+                                <section class="seccion equipos">
+                                    <div class="contenedor">
+                                        
+                                            
+                                            <ul class="equipos-grid contenedor">
+                                                <li class="equipo">
+                                                    <img class="equipoimagen" src="build/img/equipolosleonesdevenezuela.jpg" alt="imagen pareja equipo">
+                                                    <p class="equiponombre">Los Leones de VZLA</p>
+                                                    <p class="equiponombre">Tarek Massoud - José Ignacio Medina (JIM)</p>
+                                                </li>
+                                                <li class="equipo">
+                                                    <img class="equipoimagen" src="build/img/EquipoDeA cero.jpeg" alt="imagen pareja equipo">
+                                                    <p class="equiponombre">Equipo de A cero</p>
+                                                    <p class="equiponombre">Jose Cerrada-Juan Pablo Cerrada</p>                        
+                                                </li>
+                                                <li class="equipo">
+                                                    <img class="equipoimagen" src="build/img/NavegantesdelMagallanes.jpg" alt="imagen pareja equipo">
+                                                    <p class="equiponombre">Navegantes del Magallanes</p>
+                                                    <p class="equiponombre">Juan Escalona - Leandro Veloz</p>                        
+                                                </li>
+                                                <li class="equipo">
+                                                    <img class="equipoimagen" src="build/img/LosCRM.jpg" alt="imagen pareja equipo">
+                                                    <p class="equiponombre">Los CRM</p>
+                                                    <p class="equiponombre">David Hernández - Jorge Hernández</p>                        
+                                                </li>
+                                            </ul>
+                                    </div>
+
+                                </section>
+                                <!-- Listado de equipos -->
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+<!--termino acorddion-->
+
+    
+    
+
+    </section>
+
+<!--inicio acorddion-->
+    <section class="fixture">
+        <div class="accordion-container">
+                        <div class="accordion-item">
+                            <button 
+                                class="accordion-header"
+                                onclick="toggleAccordion('content3',this)">                            
+                                <p>Fixture (Referencia) </p>       
+                                <span class="arrow-icon">&#9660;</span>
+                            </button>
+                            <div id="content3" class="accordion-content">
+                                <div class="content-inner">
+                                    <div class="fixture">
+                                        <img src="build/img/fixture.png" alt="fixture">
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+        </div>
+<!--termino acorddion-->
+    </section>
+
+
+
+    <section class="ganadores seccion">
+        <div class="contenedor">
+
+            <h2>Ganadores</h2>
+            <p class="descripcion">Ganadores del Torneo</p>
+            <div class="nuestros-ganadores">
+                <div class="posicion segundolugar">
+                    <h3>2do Lugar</h3>   
+                    <p class="felicitacion">Felicitaciones!!!</p>             
+                    <p class="felicitacion">Los CRM</p>             
+                    <p class="felicitacion">David Hernández - Jorge Hernández</p>             
+                    
+                </div>
+                <div class="posicion primerlugar">                    
+                    <h3>1er Lugar</h3>                
+                    <p class="felicitacion">Felicitaciones!!!</p>             
+                    <p class="felicitacion">Los Leones de VZLA</p>
+                    <p class="felicitacion">Tarek Massoud - José Ignacio Medina (JIM)</p>
+                </div>
+                <div class="posicion tercerlugar">
+                    <h3>3er Lugar</h3>                
+                    <p class="felicitacion" >Felicitaciones!!!</p>             
+                    <p class="felicitacion">a Todos</p>             
+                    <p class="felicitacion">Los presentes</p>             
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- 
+<section class="galeria">
+
+                <div class="accordion-container">
+                    <div class="accordion-item">
+                        <button 
+                            class="accordion-header"
+                            onclick="toggleAccordion('content4',this)">                                                        
+                             <p>Galeria del evento</p>      
+                            <span class="arrow-icon">&#9660;</span>
+                        </button>
+                        <div id="content4" class="accordion-content">
+                            <div class="content-inner">
+
+                                <section class="seccion equipos">
+                                    <div class="contenedor">
+                                        
+                                            
+                                            <ul class="equipos-grid contenedor">
+                                                <li class="equipo">
+                                                    <img class="equipoimagen" src="build/img/1lugarganadores.jpeg" alt="ganadores I Torneo">   
+                                                    <p class="equipo-texto">Ganadores I Torneo Domino Operaciones IT</p>                                                 
+                                                </li>
+                                                <li class="equipo">
+                                                    <img class="equipoimagen" src="build/img/headeroperacionesit.jpeg" alt="imagen pareja equipo">
+                                                    
+                                                </li>
+                                                <li class="equipo">
+                                                    <img class="equipoimagen" src="build/img/headeroperacionesit.jpeg" alt="imagen pareja equipo">
+                                                    
+                                                </li>
+                                                <li class="equipo">
+                                                    <img class="equipoimagen" src="build/img/headeroperacionesit.jpeg" alt="imagen pareja equipo">
+                                                    
+                                                </li>
+                                                <li class="equipo">
+                                                    <img class="equipoimagen" src="build/img/headeroperacionesit.jpeg" alt="imagen pareja equipo">
+                                                    
+                                                </li>
+                                                <li class="equipo">
+                                                    <img class="equipoimagen" src="build/img/headeroperacionesit.jpeg" alt="imagen pareja equipo">
+                                                    
+                                                </li>
+                                                <li class="equipo">
+                                                    <img class="equipoimagen" src="build/img/headeroperacionesit.jpeg" alt="imagen pareja equipo">
+                                                    
+                                                </li>
+                                                <li class="equipo">
+                                                    <img class="equipoimagen" src="build/img/headeroperacionesit.jpeg" alt="imagen pareja equipo">
+                                                </li>
+                                                <li class="equipo">
+                                                    <img class="equipoimagen" src="build/img/headeroperacionesit.jpeg" alt="imagen pareja equipo">
+                                                </li>
+                                            </ul>
+                                    </div>
+
+                                </section>
+
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+    </section>
+
+     -->
+    
+     <section class="footer">
+        <div class="contenedor footer-grid">
+            <div class="footer-widget">
+                <img src="build/img/logo.png" alt="" class="logo">
+            </div>
+        </div>
+        <div class="copyright">II Torneo Dominó Operaciones IT 2025 </div>
+        <div class="copyright">Jose Cerrada &copy; 2025</div>
+    </section>
+<script src="build/js/app.js"></script>
+</body>
+
+
+
+</html>
